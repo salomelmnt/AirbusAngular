@@ -16,11 +16,40 @@
       <!-- <h2>{{selectedRessource.version | uppercase}}</h2> -->
       <h2>{{selectedRessource.version }}</h2>
       <form class="form-group">
-        <div class="info"><span>Id</span>{{selectedRessource.id}}</div>
+        <div class="info"><sspan>Id</span>{{selectedRessource.id}}</div>
+        <mat-form-field class="example-full-width">
+
+          <mat-label>Id</mat-label>
+  
+          <input matInput placeholder="id de la ressource" value="{{selectedRessource.id}}">
+        </mat-form-field>
         <div class="info"><span>Version <br></span>{{selectedRessource.version}}</div>
+        <mat-form-field class="example-full-width">
+
+          <mat-label>Version</mat-label>
+  
+          <input matInput placeholder="version de la ressource" value="{{selectedRessource.version}}">
+        </mat-form-field>
+
+
         <div class="info"><span>Longueur<br></span>{{selectedRessource.longueur}}</div>
+        <mat-form-field class="example-full-width">
+
+          <mat-label>Longueur</mat-label>
+  
+          <input matInput placeholder="longueur de la ressource" value="{{selectedRessource.longueur}}">
+        </mat-form-field>
+
+        
         <div class="info"><span>Famille<br></span>{{selectedRessource.famille}}</div>
+        <mat-form-field class="example-full-width">
+
+          <mat-label>Famille</mat-label>
+  
+          <input matInput placeholder="famille de la ressource" value="{{selectedRessource.famille}}">
+        </mat-form-field>
         <!--<button class="button" (click)="deleteRessource(selectedRessource.id)" >Supprimer</button>-->
+        <button mat-raised-button color="warn" (click)="deleteRessource(selectedRessource.id)" >Supprimer</button>
       </form>
     </div>
   </div>
