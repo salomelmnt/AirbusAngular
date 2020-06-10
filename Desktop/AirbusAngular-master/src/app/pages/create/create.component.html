@@ -1,0 +1,29 @@
+
+<div class="container">
+<form [formGroup]="ressourceForm" (ngSubmit)="onSubmit(ressourceForm.value)">
+
+  <div class="form-group">
+    <label for="version">
+      Version
+    </label>
+    <input id="version" type="text" formControlName="name">
+  </div>
+
+  <div class="form-group">
+    <label for="longueur">
+      Longueur
+    </label>
+    <input id="longueur" type="text" formControlName="age">
+  </div>
+
+  <div class="form-group">
+    <label for="famille">
+      Famille
+    </label>
+    <input id="famille" type="text" formControlName="category">
+  </div>
+
+  <button class="button" type="submit">Créer ressource</button>
+
+</form>
+</div>
